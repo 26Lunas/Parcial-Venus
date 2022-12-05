@@ -1,0 +1,77 @@
+
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+:root{
+    --colorFondoCuerpo: #ebe5e3;
+    --colorTextoMenu: #403b32;
+}
+body{
+    background: var(--colorFondoCuerpo);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Menu de navegación*/
+.menu, .menu ul{
+    display: flex;
+    flex-direction: row;
+}
+.menu{
+    /* border: solid red 2px; */
+    width: 100vw;
+    height: 50px;
+    background: var(--colorFondoCuerpo);
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 6%;
+    padding-right: 6%;
+    box-shadow: #403b32 1px 1.2px 5px;
+    margin-bottom: 7%;
+}
+.logo{
+    font-size: 30px;
+    text-shadow: #403b32 1px 1px 1px;
+}
+.menu ul{
+    /* border: solid red 2px; */
+    width: 36%;
+    justify-content: space-around;
+    font-size: 20px;
+}
+.menu ul li{
+    list-style: none;
+}
+.menu ul a{
+    text-decoration: none;
+    color: var(--colorTextoMenu);
+}
+.menu ul a:hover{
+    font-weight: bold;
+}
+/* Fin Menu de navegación */
+
+/* Sobre mi */
+.sobreMi{
+    /* border: solid blue 2px; */
+    width: 85%;
+    height: 90vh;
+    background: linear-gradient(rgb(253, 252, 249) 50%, #f4ece4 50%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: #403b32 1px 5px 15px;
+    margin-bottom: 7%;
+}
+.img-perfil{
+    width: 30%;
+    height: 75%;
+}
+.infoSobreMi{
+    width: 35%;
+}
