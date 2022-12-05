@@ -7,6 +7,7 @@
 :root{
     --colorFondoCuerpo: #ebe5e3;
     --colorTextoMenu: #403b32;
+    --colorBlanco: #f5efee;
 }
 body{
     background: var(--colorFondoCuerpo);
@@ -60,7 +61,7 @@ body{
     /* border: solid blue 2px; */
     width: 85%;
     height: 90vh;
-    background: linear-gradient(rgb(253, 252, 249) 50%, #f4ece4 50%);
+    background: linear-gradient(var(--colorBlanco) 50%, #f4ece4 50%);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -84,8 +85,52 @@ body{
     /* border: solid blue 2px; */
     width: 85%;
     height: 90vh;
-    background: rgb(253, 252, 249);
+    background: var(--colorBlanco);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
     box-shadow: #403b32 1px 5px 15px;
     margin-bottom: 7%;
+}
+.cont-cuadros{
+    /* border: solid 2px blue; */
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2%;
+}
+
+.cuadro{
+    width: 80px;
+    height: 80px;
+    background: #b9b6b0;
+}
+.cuadro-1{
+    background: #c7b7a9;
+}
+.cuadro-2{
+    margin-left: 8%;
+    background: #e8d6c9;
+}
+.cuadro-3{
+    margin-left: 8%;
+    background: #a6a09b;
+}
+.cuadro-4{
+    margin-left: 8%;
+    background: #bec8c0;
+}
+.cuadro-5{
+    margin-left: 8%;
+    background: #ece4e2;
+}
+
+
+.info-servicio{
+    width: 75%;
+}
+.titulo-servicio{
+    width: 70%;
 }
